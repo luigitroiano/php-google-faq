@@ -9,7 +9,6 @@
   }
 .padd_top{
   padding-top: 30px;
-
 }
 body{
   font-family: 'Noto Sans JP', sans-serif;
@@ -22,5 +21,9 @@ body{
   }
   p{
     font-size: 14px;
+    a{
+      color: #3368D6;
+      text-decoration: none;
+    }
   }
 }
