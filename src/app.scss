@@ -13,17 +13,52 @@
 body{
   font-family: 'Noto Sans JP', sans-serif;
   color: #3C4043;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  width: 70vw;
-  h2{
-    font-weight: 400;
+  nav {
+    width: 100%;
+    img {
+    width: 100px;
+    }
+    .nav-top {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    }
+    .nav-top-dx {
+    padding: 0 0 5px 15px;
+    }
+    span {
+    font-size: 20px;
+    }
+    .links{
+      height: 50px;
+      margin-left: 18px;
+      border-bottom: 1px solid #3C4043;;
+      a{
+        padding-right: 40px;
+        text-decoration: none;
+        color: #3C4043;
+      }
+      body > nav > div.links > a:nth-child(5){
+        color: #3368D6 !important;
+        border-bottom: 5px solid #3368D6;
+        padding-bottom: 21px;
+      }
+    }
   }
-  p{
-    font-size: 14px;
-    a{
-      color: #3368D6;
-      text-decoration: none;
+  
+  main{
+    margin-bottom: 80px;
+    width: 70vw;
+    margin: 0 auto;
+    h2{
+    font-weight: 400;
+    } 
+    p{
+      font-size: 14px;
+      a{
+        color: #3368D6;
+        text-decoration: none;
+      }
     }
   }
 }

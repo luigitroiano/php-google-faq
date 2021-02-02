@@ -38,13 +38,32 @@ $database = [
 </head>
 
 <body>
-  <?php foreach ($database as $key => $value) { ?>
-    <h2 class="margin_top"><?php echo $value["domanda"] ?></h2>
-    <?php $paragraph =  explode("∆", $value["risposta"]) ?>
-    <?php foreach ($paragraph as $sentence) { ?>
-      <p class="padd_top"><?php echo $sentence ?> <br></p>
+  <nav>
+    <div class="nav-top">
+      <div class="nav-top-sx">
+        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+      </div>
+      <div class="nav-top-dx">
+        <span>Privacy e Termini</span>
+      </div>
+    </div>
+    <div class="links">
+      <a href="">Introduzione</a>
+      <a href="">Norme sulla privacy</a>
+      <a href="">Termini di servizio</a>
+      <a href="">Tecnologie</a>
+      <a class="last" href="">Domande Frequenti</a>
+    </div>
+  </nav>
+  <main>
+    <?php foreach ($database as $key => $value) { ?>
+      <h2 class="margin_top"><?php echo $value["domanda"]; ?></h2>
+      <?php $paragraph =  explode("∆", $value["risposta"]); ?>
+      <?php foreach ($paragraph as $sentence) { ?>
+        <p class="padd_top"><?php echo $sentence; ?> <br></p>
+      <?php } ?>
     <?php } ?>
-  <?php } ?>
+  </main>
 </body>
 
 </html>
